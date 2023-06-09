@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ body{
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(rgb(246, 23, 220),rgb(238, 133, 215));
+    display: grid;
+    place-items: center;
+ }
+
+ .main{
+    width:40vw;
+    height:70vh;
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .main h1{
+    font-size:75px;
+    line-height: 60px;
+ }
+
+.main h3{
+    font-family: 'Lucida Sans Unicode', Geneva, sans-serif;
+    line-height: 40px;
+    color:rgb(158, 240, 158);
+    font-size:45px;
+}
+
+.main h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 40px;
+}
+
+
+
+
+
+.main h1{
+    /*-webkit-text-stroke: 1px #fff;*/
+    color:transparent;
+    background-image: linear-gradient(#44cd28, #f0e352);
+    background-repeat: no-repeat;
+    -webkit-background-clip:text;
+    background-position: -500px 0;
+    animation: backcolor 2s linear  infinite alternate;
+
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+
+}
+.main a{
+    display:inline-block;
+    border-radius:6px;
+    
+    padding:10px 30px;
+    text-decoration: none;
+ 
+    font: bold;
+    font-family: "montserrat";
+    font-size:20px;
+    margin:10px;
+}
+ 
+.btn a {
+    border:2px solid #232201;
+    color:#424004;
+    background: none;
+    cursor:pointer;
+    color:#232201;
+    transition:0.6s;
+    position:relative;
+    overflow:hidden;
+  
+
+}
+
+.btn a::before{
+    content:" ";
+    position:absolute;
+    left:0;
+    width:100%;
+    height:0%;
+    background:#3498db;
+  
+    z-index:-1;
+    transition:0.6s;
+    top:0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn a:hover{
+    color:antiquewhite;
+
+}
+
+
+
+.btn a:hover::before{
+    height:180%;
+}
+
+/*.main a::before{
+    content:" ";
+    position:absolute;
+    left:0;
+    width:100%;
+    height:0%;
+    background:#3498db;
+    height:100%;
+    z-index:-1;
+    transition:0.6s;
+    top:0;
+    border-radius: 0 0 50% 50%;
+}
+
+
+
+.main a:hover::before{
+    height:180%;
+}*/
